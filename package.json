@@ -32,6 +32,22 @@
     "node": ">=22.20.0",
     "pnpm": ">=10.24.0"
   },
-  "scripts": {},
-  "packageManager": "pnpm@10.24.0"
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "check-types": "turbo check-types",
+    "orval": "turbo orval",
+    "cspell": "cspell --config ./cspell.json --no-progress  ."
+  },
+  "packageManager": "pnpm@10.24.0",
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@types/node": "catalog:",
+    "cspell": "catalog:",
+    "tsx": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
+  }
 }

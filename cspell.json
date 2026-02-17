@@ -1,0 +1,20 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/.git/**",
+        "**/.next/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/coverage/**",
+        "**/.turbo/**",
+        "**/pnpm-lock.yaml",
+        "**/yarn.lock",
+        "**/package-lock.json",
+        "**/*.tsbuildinfo",
+        "**/*.{png,jpg,jpeg,gif,webp,ico,svg,pdf,zip,cbz,mp4,mp3,woff,woff2,ttf,eot}",
+        "apps/*/src/schema/**"
+    ],
+    "words": []
+}
