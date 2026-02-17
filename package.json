@@ -1,0 +1,37 @@
+{
+  "name": "index-kit",
+  "version": "0.0.1",
+  "description": "IndexKit is a fast, modern reading server and reader that operates locally. It aims to be designed to maximize readability and discoverability for each user.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "moons-14 <moons@moons14.com>",
+  "keywords": [
+    "ebook",
+    "reader",
+    "library",
+    "search",
+    "index",
+    "search",
+    "epub",
+    "pdf",
+    "cbz",
+    "cbr",
+    "manga",
+    "comics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moons-14/IndexKit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moons-14/IndexKit/issues"
+  },
+  "homepage": "https://github.com/moons-14/IndexKit#readme",
+  "engines": {
+    "node": ">=22.20.0",
+    "pnpm": ">=10.24.0"
+  },
+  "scripts": {},
+  "packageManager": "pnpm@10.24.0"
+}
