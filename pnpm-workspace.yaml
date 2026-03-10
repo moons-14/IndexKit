@@ -9,7 +9,12 @@ catalog:
   tsx: ^4.21.0
   turbo: ^2.8.9
   typescript: ^5.9.3
+  vitest: ^3.0.0
 
 catalogMode: strict
 
 cleanupUnusedCatalogs: true
+
+onlyBuiltDependencies:
+  - sharp
+  - canvas

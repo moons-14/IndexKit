@@ -1,0 +1,38 @@
+services:
+  # デバッグ用: コンテナを起動してコマンドを手動実行できる
+  dev:
+    build: .
+    volumes:
+      - ${LIBRARY_PATH:-/tmp/test-library}:/library:ro
+    environment:
+      LIBRARY_PATH: /library
+      WORKER_COUNT: "4"
+    entrypoint: ["sh"]
+    profiles: ["debug"]
+
+  # library-scanner: ディレクトリ走査ベンチマーク
+  scanner-bench:
+    build: .
+    volumes:
+      - ${LIBRARY_PATH:-/tmp/test-library}:/library:ro
+    environment:
+      LIBRARY_PATH: /library
+      WORKER_COUNT: "4"
+    command:
+      - node
+      - packages/library-scanner/dist/bench/scan-bench.js
+      - --count=10000
+    profiles: ["bench"]
+
+  # library-scanner: メタデータ+サムネイル抽出ベンチマーク
+  extract-bench:
+    build: .
+    volumes:
+      - ${LIBRARY_PATH:-/tmp/test-library}:/library:ro
+    environment:
+      LIBRARY_PATH: /library
+    command:
+      - node
+      - packages/library-scanner/dist/bench/extract-bench.js
+      - --count=100
+    profiles: ["bench"]
