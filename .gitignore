@@ -7,3 +7,6 @@ dist-bench
 build
 output
 .turbo
+.next
+*.tsbuildinfo
+next-env.d.ts
