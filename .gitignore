@@ -10,3 +10,5 @@ output
 .next
 *.tsbuildinfo
 next-env.d.ts
+.envrc
+*.log
