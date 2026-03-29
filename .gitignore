@@ -13,3 +13,6 @@ next-env.d.ts
 .envrc
 *.log
 .corepack
+.git
+.direnv
+.claude
