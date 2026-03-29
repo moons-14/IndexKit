@@ -1,0 +1,13 @@
+services:
+  workspace:
+    build:
+      context: .
+    command: >
+      bash -lc "pnpm install --store-dir /pnpm/store && sleep infinity"
+    volumes:
+      - .:/workspace
+      - pnpm-store:/pnpm/store
+    working_dir: /workspace
+
+volumes:
+  pnpm-store:

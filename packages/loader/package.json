@@ -1,0 +1,37 @@
+{
+  "name": "@indexkit/loader",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Loader package for scanning manga and document sources in IndexKit.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json --emitDeclarationOnly && esbuild src/index.ts --bundle --format=esm --platform=node --target=node22 --packages=external --outfile=dist/index.js --sourcemap",
+    "check-types": "tsc --noEmit -p tsconfig.json",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "node --import tsx --test test/**/*.test.ts"
+  },
+  "devDependencies": {
+    "esbuild": "catalog:",
+    "yazl": "catalog:"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "catalog:",
+    "@types/yauzl": "catalog:",
+    "fast-xml-parser": "catalog:",
+    "node-unrar-js": "catalog:",
+    "pdfjs-dist": "catalog:",
+    "yauzl": "catalog:"
+  }
+}

@@ -35,6 +35,7 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
+    "test": "turbo test",
     "lint": "turbo lint",
     "format": "turbo format",
     "check-types": "turbo check-types",
