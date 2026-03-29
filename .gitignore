@@ -12,3 +12,4 @@ output
 next-env.d.ts
 .envrc
 *.log
+.corepack
