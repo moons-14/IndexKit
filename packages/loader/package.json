@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "esbuild": "catalog:",
+    "vitest": "catalog:",
     "yazl": "catalog:"
   },
   "dependencies": {
